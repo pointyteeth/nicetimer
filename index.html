@@ -1,0 +1,348 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>nicetimer process</title>
+    <meta name="description" content="The process of building Nicetimer">
+    <meta name="author" content="Meena Vempaty">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Quicksand:700" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #E7FCCD;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        h3 {
+            font-size: 14pt;
+        }
+
+        a {
+            color: #7BB754;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+        .fullImage {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        #content {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            background-color: #CFF99B;
+            margin: 24px 16px 0;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 2px solid #7BB754;
+            box-shadow: 0px 8px #7BB754;
+            overflow: hidden;
+            justify-content: center;
+        }
+
+        .gallery {
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            height: 300px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .subsection {
+            margin: auto;
+            max-width: 340px;
+        }
+
+        ::-webkit-scrollbar {
+            height: 20px;
+        }
+
+        ::-webkit-scrollbar-track:horizontal {
+            background-color: #E7FCCD;
+            border: 2px solid #7BB754;
+            border-radius: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #7BB754;
+            border: 2px solid #7BB754;
+            border-radius: 8px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="content">
+
+        <div class="section" id="title">
+            <h1>nicetimer</h1>
+        </div>
+
+        <div class="section" id="intro" style="display: flex; flex-flow: row wrap; align-items: center;">
+            <img src="tea.png" height=160px style="margin: 30px; flex-shrink: 0;">
+            <div><p>
+                Nicetimer is an online timer that I designed because:
+                <ul>
+                    <li>
+                        I wanted to try putting together a visual style emphasizing warmth and cleanliness
+                    </li>
+                    <li>
+                        I wanted a pleasant timer to use when making tea
+                    </li>
+                    <li>
+                        I wanted to share my design process with potential clients and employers 😉
+                    </li>
+                </ul>
+            </p></div>
+        </div>
+
+        <div class="section" id="brainstorming">
+            <h2>Brainstorming</h2>
+            <p>
+                I started off by putting together a collection of any and all thoughts I had about this project. I kept adding to it throughout the project as I had new ideas.
+            </p>
+            <img class="fullImage" src="brainstorming.png">
+        </div>
+
+        <div class="section" id="personas">
+            <h2>User Personas</h2>
+            <p>
+                made user personas wooo
+            </p>
+            <div style="
+                display: flex;
+                flex-flow: row wrap;
+            ">
+                <div class="subsection">
+                    <h2>Brianna Carter</h2>
+                    <img src="personas/stock/brianna.png" height=200px>
+                    <img src="personas/sketch/brianna.png" height=200px>
+                    <p>
+                            <li>25 year old woman</li>
+                            <li>HR associate in Seattle</li>
+                            <li>Lives with two roommates</li>
+                        <h3>Personal</h3>
+                            <li>Organized to a fault at work, spontaneous elsewhere</li>
+                            <li>Loves vintage and alternative fashion</li>
+                            <li>Maintains a collection of loose leaf tea at her desk</li>
+                        <h3>Goals</h3>
+                            <li>Always looking for ways to add extra pizzazz</li>
+                            <li>Taking a basic graphic design class</li>
+                        <h3>Frustrations</h3>
+                            <li>When people in her workplace are messy</li>
+                        <h3>Tech</h3>
+                            <li>iMac at work, Windows laptop and iPhone 5s with matching skins for personal use</li>
+                    </p>
+                </div>
+                <div class="subsection">
+                    <h2>Mark Harris</h2>
+                    <img src="personas/stock/mark.png" height=200px>
+                    <img src="personas/sketch/mark.png" height=200px>
+                    <p>
+                            <li>20 year old man</li>
+                            <li>University student majoring in chemical engineering</li>
+                            <li>Tutor</li>
+                        <h3>Personal</h3>
+                            <li>Friendly and welcoming but slightly forgetful</li>
+                            <li>Reads comics and watches cartoons in spare time, prefers lighthearted stories</li>
+                            <li>Strictly times study sessions and breaks to stay focused</li>
+                        <h3>Goals</h3>
+                            <li>Develop a good work ethic while in school</li>
+                            <li>Spend more time at social activities</li>
+                        <h3>Frustrations</h3>
+                            <li>Mismanaging time and having to stay up late to finish assignments</li>
+                        <h3>Tech</h3>
+                            <li>Macbook Pro and Nexus smartphone</li>
+                    </p>
+                </div>
+                <div class="subsection">
+                    <h2>Carol Tan</h2>
+                    <img src="personas/stock/carol.png" height=200px>
+                    <img src="personas/sketch/carol.png" height=200px>
+                    <p>
+                            <li>43 year old woman</li>
+                            <li>Administrative assistant at an Indiana middle school</li>
+                            <li>Mother of two</li>
+                        <h3>Personal</h3>
+                            <li>Loud and cheerful</li>
+                            <li>Starting to grow vegetables</li>
+                            <li>Recently diagnosed with prediabetes</li>
+                        <h3>Goals</h3>
+                            <li>Be a healthy role model for her kids</li>
+                            <li>Cutting back on coffee and switching to tea</li>
+                        <h3>Frustrations</h3>
+                            <li>When healthier food is blander</li>
+                        <h3>Tech</h3>
+                            <li>Windows desktop at work and personal iPhone</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="benchmarking">
+            <h2>Benchmarking</h2>
+            <p>
+                did some things
+            </p>
+            <div style="
+                display: flex;
+                flex-flow: row wrap;
+            ">
+                <div class="subsection">
+                    <h2><a href="http://www.timer-tab.com/" target=blank>timer-tab.com</a></h2>
+                    <img class="screenshot" src="benchmarks/1.png" height=216px>
+                    <p>
+                        <li>Clean colors and style</li>
+                        <li>Status shown in page title</li>
+                    </p>
+                </div>
+                <div class="subsection">
+                    <h2><a href="http://www.e.ggtimer.com/" target=blank>e.ggtimer.com</a></h2>
+                    <img class="screenshot" src="benchmarks/2.png" height=216px>
+                    <p>
+                        <li>Save timers with URL</li>
+                        <li>Built in common timers</li>
+                    </p>
+                </div>
+                <div class="subsection">
+                    <h2><a href="http://www.steep.it/" target=blank>steep.it</a></h2>
+                    <img class="screenshot" src="benchmarks/3.png" height=216px>
+                    <p>
+                        <li>Select a specific tea</li>
+                        <li>Targeted visual style</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="storyboarding">
+            <h2>Storyboarding</h2>
+            <p>
+                I put together a storyboard to illustrate Nicetimer's use case - tea. It helped me stay focused and in context.
+            </p>
+            <img class="fullImage" src="storyboard.png">
+        </div>
+
+        <div class="section" id="wireframing">
+            <h2>Wireframing</h2>
+            <p>
+                I sketched out some controls for the specific tasks of a timer, plus some overall layouts.
+            </p>
+            <div class="gallery">
+                <img height=260px src="controls\time.png">
+                <img height=260px src="controls\start.png">
+                <img height=260px src="controls\progress.png">
+                <img height=260px src="controls\title.png">
+                <img height=260px src="controls\interval.png">
+                <img height=260px src="controls\link.png">
+                <img height=260px src="controls\shape.png">
+            </div>
+            <p>
+                Then, I put together some wireframes of the entire timer.
+            </p>
+            <div class="gallery">
+                <img height=260px src="layouts\1.png">
+                <img height=260px src="layouts\3.png">
+                <img height=260px src="layouts\4.png">
+            </div>
+            <p>
+                After evaluating these using the personas I created, I put together a rough interactive prototype to test with, changing it to respond to feedback.
+            </p>
+            <div style="width:80%; margin:auto;"> <div style="position:relative; width:100%; height:0px; padding-bottom:68.125%;">
+                <iframe src="https://marvelapp.com/1dd1bf4?emb=1" width="1280" height="872" allowTransparency="true" frameborder="0"></iframe>
+            </div> </div>
+        </div>
+
+        <div class="section" id="testing">
+            <h2>User Testing</h2>
+            <p>
+                I put together an outline for user testing, rounded up some friends (since it was a personal project), and started testing. The test outline starts off with some background questions, and progresses to trying out tasks on the interactive prototype.
+            </p>
+            <p>
+                I like to use web forms as outlines for user tests and interviews, so that I can type my notes while keeping my eyes and attention on the user.
+            </p>
+            <div style="width:80%; margin:auto;"> <div style="position:relative; width:100%; height:0px; padding-bottom:75%;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1RIWSsTGQXGufs_fH4LYuodhfSpBX5L4suXqjB7MVK6SUAA/viewform?embedded=true" width="300" height="400" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 0;">Loading...</iframe>
+            </div> </div>
+        </div>
+
+        <div class="section" id="style">
+            <h2>Visual Style</h2>
+            <p>
+                I collected reference for the aesthetic I wanted for the timer in a moodboard.
+            </p>
+            <img class="fullImage" src="https://docs.google.com/drawings/d/1AEoemCUylb29BtUF5poDFiX5fL_PMXADkaVuXvzeIQA/pub?w=1197&amp;h=774">
+            <p>
+                Then, I put together a style guide. I wanted the timer to be customizeable, so I included five color palettes.
+            </p>
+            <img class="fullImage" src="style guide.png">
+        </div>
+
+        <div class="section" id="hifi">
+            <h2>High-Fidelity</h2>
+            <p>
+                Synthesizing the style, layout, and tester feedback, I created a final high-fidelity prototype. (<a target="_blank" href="https://marvelapp.com/i5g70h">Open in new tab</a>)
+            </p>
+            <div style="width:80%; margin:auto;"> <div style="position:relative; width:100%; height:0px; padding-bottom:60%;">
+                <iframe src="https://marvelapp.com/i5g70h?emb=1" width="1200" height="800" allowTransparency="true" frameborder="0"></iframe>
+            </div> </div>
+        </div>
+
+        <div class="section" id="metrics">
+            <h2>Metrics</h2>
+            <p>
+                Along with high-fidelity mockups, I put together a list of key metrics to monitor the timer's performance.
+                <li>
+                    I wanted to try putting together a visual style emphasizing warmth and cleanliness
+                </li>
+            </p>
+        </div>
+
+        <div class="section" id="conclusion">
+            <p>
+                So there it is! That's my design process - if you'd like to hire me, I can do any or all of the above UI/UX design tasks for your company.
+            </p>
+        </div>
+
+        <div class="section" id="web">
+            <h2>Psst...</h2>
+            <p>
+                Generally, I stop at prototyping and hand off mockups and specs to someone else on a team, but because I really did want a shiny new tea timer, I went ahead and built nicetimer. You can use it over here:
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
