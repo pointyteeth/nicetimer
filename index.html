@@ -23,9 +23,14 @@
             background-color: #E7FCCD;
             background-image: url("background.png");
             background-attachment: fixed;
-            margin: 0;
+            margin: 16px 0;
             font-family: 'Lato', sans-serif;
             color: rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            font-size: 42pt;
+            margin: 16px;
         }
 
         h1, h2 {
@@ -39,6 +44,14 @@
 
         a {
             color: #7BB754;
+        }
+
+        ul {
+            -webkit-padding-start: 24px;
+        }
+
+        li {
+            margin: 8px 0;
         }
 
         img {
@@ -68,8 +81,8 @@
         }
 
         .section {
-            background-color: rgba(207, 249, 155, 0.7);//#CFF99B;
-            margin: 24px 16px 0;
+            background-color: rgba(207, 249, 155, 0.7);
+            margin: 12px 16px;
             padding: 10px 20px;
             border-radius: 8px;
             border: 2px solid #7BB754;
@@ -114,9 +127,20 @@
 
 <body>
     <div id="content">
-
         <div class="section" id="title">
-            <h1>nicetimer</h1>
+            <h1>
+                <img src="star.svg" alt="star" height=40px style="
+                    opacity: 0.6;
+                    fill: #ffffff;
+                ">
+                nicetimer
+                <img src="star.svg" alt="star" height=40px style="
+                    opacity: 0.6;
+                    fill: #ffffff;
+                ">
+            </h1>
+            <h2>Design Process</h2>
+            <h3 style="text-align: center;"><a href="http://through-the-floor.com" target="_blank">Meena Vempaty</a></h3>
         </div>
 
         <div class="section" id="intro" style="display: flex; flex-flow: row wrap; align-items: center;">
@@ -159,20 +183,30 @@
                     <img src="personas/stock/brianna.png" height=200px>
                     <img src="personas/sketch/brianna.png" height=200px>
                     <p>
+                        <ul>
                             <li>25 year old woman</li>
                             <li>HR associate in Seattle</li>
                             <li>Lives with two roommates</li>
+                        </ul>
                         <h3>Personal</h3>
+                        <ul>
                             <li>Organized to a fault at work, spontaneous elsewhere</li>
                             <li>Loves vintage and alternative fashion</li>
                             <li>Maintains a collection of loose leaf tea at her desk</li>
+                        </ul>
                         <h3>Goals</h3>
+                        <ul>
                             <li>Always looking for ways to add extra pizzazz</li>
                             <li>Taking a basic graphic design class</li>
+                        </ul>
                         <h3>Frustrations</h3>
+                        <ul>
                             <li>When people in her workplace are messy</li>
+                        </ul>
                         <h3>Tech</h3>
+                        <ul>
                             <li>iMac at work, Windows laptop and iPhone 5s with matching skins for personal use</li>
+                        </ul>
                     </p>
                 </div>
                 <div class="subsection">
@@ -180,20 +214,30 @@
                     <img src="personas/stock/mark.png" height=200px>
                     <img src="personas/sketch/mark.png" height=200px>
                     <p>
+                        <ul>
                             <li>20 year old man</li>
                             <li>University student majoring in chemical engineering</li>
                             <li>Tutor</li>
+                        </ul>
                         <h3>Personal</h3>
+                        <ul>
                             <li>Friendly and welcoming but slightly forgetful</li>
                             <li>Reads comics and watches cartoons in spare time, prefers lighthearted stories</li>
                             <li>Strictly times study sessions and breaks to stay focused</li>
+                        </ul>
                         <h3>Goals</h3>
+                        <ul>
                             <li>Develop a good work ethic while in school</li>
                             <li>Spend more time at social activities</li>
+                        </ul>
                         <h3>Frustrations</h3>
+                        <ul>
                             <li>Mismanaging time and having to stay up late to finish assignments</li>
+                        </ul>
                         <h3>Tech</h3>
+                        <ul>
                             <li>Macbook Pro and Nexus smartphone</li>
+                        </ul>
                     </p>
                 </div>
                 <div class="subsection">
@@ -201,20 +245,30 @@
                     <img src="personas/stock/carol.png" height=200px>
                     <img src="personas/sketch/carol.png" height=200px>
                     <p>
+                        <ul>
                             <li>43 year old woman</li>
                             <li>Administrative assistant at an Indiana middle school</li>
                             <li>Mother of two</li>
+                        </ul>
                         <h3>Personal</h3>
+                        <ul>
                             <li>Loud and cheerful</li>
                             <li>Starting to grow vegetables</li>
                             <li>Recently diagnosed with prediabetes</li>
+                        </ul>
                         <h3>Goals</h3>
+                        <ul>
                             <li>Be a healthy role model for her kids</li>
                             <li>Cutting back on coffee and switching to tea</li>
+                        </ul>
                         <h3>Frustrations</h3>
+                        <ul>
                             <li>When healthier food is blander</li>
+                        </ul>
                         <h3>Tech</h3>
+                        <ul>
                             <li>Windows desktop at work and personal iPhone</li>
+                        </ul>
                     </p>
                 </div>
             </div>
@@ -232,26 +286,26 @@
                 <div class="subsection">
                     <h2><a href="http://www.timer-tab.com/" target=blank>timer-tab.com</a></h2>
                     <img class="screenshot" src="benchmarks/1.png" height=216px>
-                    <p>
+                    <p><ul>
                         <li>Clean colors and style</li>
                         <li>Status shown in page title</li>
-                    </p>
+                    </ul></p>
                 </div>
                 <div class="subsection">
                     <h2><a href="http://www.e.ggtimer.com/" target=blank>e.ggtimer.com</a></h2>
                     <img class="screenshot" src="benchmarks/2.png" height=216px>
-                    <p>
+                    <p><ul>
                         <li>Save timers with URL</li>
                         <li>Built in common timers</li>
-                    </p>
+                    </ul></p>
                 </div>
                 <div class="subsection">
                     <h2><a href="http://www.steep.it/" target=blank>steep.it</a></h2>
                     <img class="screenshot" src="benchmarks/3.png" height=216px>
-                    <p>
+                    <p><ul>
                         <li>Select a specific tea</li>
                         <li>Targeted visual style</li>
-                    </p>
+                    </ul></p>
                 </div>
             </div>
         </div>
@@ -333,9 +387,33 @@
             <h2>Metrics</h2>
             <p>
                 Along with high-fidelity mockups, I put together a list of key metrics to monitor the timer's performance.
-                <li>
-                    I wanted to try putting together a visual style emphasizing warmth and cleanliness
-                </li>
+                <ul>
+                    <li>Times the timer is set for</li>
+                        <ul>
+                            <li>Do the times set match the intended use case, or is the timer useful for other things?</li>
+                        </ul>
+                    <li>Dates and times the timer is used</li>
+                        <ul>
+                            <li>Is the timer used during the workday, or at other times?</li>
+                        </ul>
+                    <li>Frequency of use by individuals</li>
+                        <ul>
+                            <li>Do people try it once and leave, use it once in a while, or use it on a daily basis?</li>
+                        </ul>
+
+                    <li>Times the timer is set for</li>
+                        <ul>
+                            <li>Do the times set match the intended use case, or is the timer useful for other things?</li>
+                        </ul>
+                    <li>Dates and times the timer is used</li>
+                        <ul>
+                            <li>Is the timer used during the workday, or at other times?</li>
+                        </ul>
+                    <li>Frequency of use by individuals</li>
+                        <ul>
+                            <li>Do people try it once and leave, use it once in a while, or use it on a daily basis?</li>
+                        </ul>
+                </ul>
             </p>
         </div>
 
@@ -345,7 +423,7 @@
             </p>
         </div>
 
-        <div class="section" id="web">
+        <div class="section" id="web" style="display:none">
             <h2>Psst...</h2>
             <p>
                 Generally, I stop at prototyping and hand off mockups and specs to someone else on a team, but because I really did want a shiny new tea timer, I went ahead and built nicetimer. You can use it over here:
