@@ -16,7 +16,24 @@
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#7bb754">
     <meta name="theme-color" content="#cff99b">
 
+    <!--Fancybox-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$(".fancybox").fancybox();
+    	});
+    </script>
+
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Quicksand:700" rel="stylesheet">
+
     <style>
 
         body {
@@ -111,7 +128,7 @@
 
         ::-webkit-scrollbar-track:horizontal {
             background-color: #E7FCCD;
-            border: 2px solid #7BB754;
+            border: 2px solid rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
 
@@ -139,7 +156,6 @@
                     fill: #ffffff;
                 ">
             </h1>
-            <h2>Design Process</h2>
             <h3 style="text-align: center;"><a href="http://through-the-floor.com" target="_blank">Meena Vempaty</a></h3>
         </div>
 
@@ -166,7 +182,7 @@
             <p>
                 I started off by putting together a collection of any and all thoughts I had about this project. I kept adding to it throughout the project as I had new ideas.
             </p>
-            <img class="fullImage" src="brainstorming.png">
+            <a href="brainstorming.png" class="fancybox"><img class="fullImage" src="brainstorming.png"></a>
         </div>
 
         <div class="section" id="personas">
@@ -180,8 +196,8 @@
             ">
                 <div class="subsection">
                     <h2>Brianna Carter</h2>
-                    <img src="personas/stock/brianna.png" height=200px>
-                    <img src="personas/sketch/brianna.png" height=200px>
+                    <a href="personas/stock/brianna.png" class="fancybox" rel="personas"><img src="personas/stock/brianna.png" height=200px></a>
+                    <a href="personas/sketch/brianna.png" class="fancybox" rel="personas"><img src="personas/sketch/brianna.png" height=200px></a>
                     <p>
                         <ul>
                             <li>25 year old woman</li>
@@ -211,8 +227,8 @@
                 </div>
                 <div class="subsection">
                     <h2>Mark Harris</h2>
-                    <img src="personas/stock/mark.png" height=200px>
-                    <img src="personas/sketch/mark.png" height=200px>
+                    <a href="personas/stock/mark.png" class="fancybox" rel="personas"><img src="personas/stock/mark.png" height=200px></a>
+                    <a href="personas/sketch/mark.png" class="fancybox" rel="personas"><img src="personas/sketch/mark.png" height=200px></a>
                     <p>
                         <ul>
                             <li>20 year old man</li>
@@ -242,8 +258,8 @@
                 </div>
                 <div class="subsection">
                     <h2>Carol Tan</h2>
-                    <img src="personas/stock/carol.png" height=200px>
-                    <img src="personas/sketch/carol.png" height=200px>
+                    <a href="personas/stock/carol.png" class="fancybox" rel="personas"><img src="personas/stock/carol.png" height=200px></a>
+                    <a href="personas/sketch/carol.png" class="fancybox" rel="personas"><img src="personas/sketch/carol.png" height=200px></a>
                     <p>
                         <ul>
                             <li>43 year old woman</li>
@@ -277,23 +293,25 @@
         <div class="section" id="benchmarking">
             <h2>Benchmarking</h2>
             <p>
-                did some things
+                These are some online timers that fit the same problem I was trying to solve. I made note of the features and ideas I wanted to apply to my own timer.
             </p>
             <div style="
                 display: flex;
                 flex-flow: row wrap;
             ">
                 <div class="subsection">
-                    <h2><a href="http://www.timer-tab.com/" target=blank>timer-tab.com</a></h2>
-                    <img class="screenshot" src="benchmarks/1.png" height=216px>
+                    <a href="http://www.timer-tab.com/" target=blank>
+                        <h2>timer-tab.com</h2>
+                        <img class="screenshot" src="benchmarks/1.png" height=216px>
+                    </a>
                     <p><ul>
                         <li>Clean colors and style</li>
                         <li>Status shown in page title</li>
                     </ul></p>
                 </div>
                 <div class="subsection">
-                    <h2><a href="http://www.e.ggtimer.com/" target=blank>e.ggtimer.com</a></h2>
-                    <img class="screenshot" src="benchmarks/2.png" height=216px>
+                        <h2><a href="http://www.e.ggtimer.com/" target=blank>e.ggtimer.com</a></h2>
+                        <img class="screenshot" src="benchmarks/2.png" height=216px>
                     <p><ul>
                         <li>Save timers with URL</li>
                         <li>Built in common timers</li>
@@ -313,35 +331,38 @@
         <div class="section" id="storyboarding">
             <h2>Storyboarding</h2>
             <p>
-                I put together a storyboard to illustrate Nicetimer's use case - tea. It helped me stay focused and in context.
+                I created a storyboard to illustrate Nicetimer's main use case - making tea at a desk. It helped me stay focused and in context.
             </p>
-            <img class="fullImage" src="storyboard.png">
+            <a href="storyboard.png" class="fancybox"><img class="fullImage" src="storyboard.png"></a>
         </div>
 
         <div class="section" id="wireframing">
             <h2>Wireframing</h2>
             <p>
-                I sketched out some controls for the specific tasks of a timer, plus some overall layouts.
+                With a good understanding of the intended users and use case in place, I made some rough sketches of the UI. At this stage, I kept things simple to iterate quickly and flexibly.
+            </p>
+            <p>
+                First, I sketched out some controls for the individual tasks of using a timer, like setting a time and starting the timer, plus some overall layouts.
             </p>
             <div class="gallery">
-                <img height=260px src="controls\time.png">
-                <img height=260px src="controls\start.png">
-                <img height=260px src="controls\progress.png">
-                <img height=260px src="controls\title.png">
-                <img height=260px src="controls\interval.png">
-                <img height=260px src="controls\link.png">
-                <img height=260px src="controls\shape.png">
+                <a href="controls\time.png" class="fancybox" rel="controls"><img height=260px src="controls\time.png"></a>
+                <a href="controls\start.png" class="fancybox" rel="controls"><img height=260px src="controls\start.png"></a>
+                <a href="controls\progress.png" class="fancybox" rel="controls"><img height=260px src="controls\progress.png"></a>
+                <a href="controls\title.png" class="fancybox" rel="controls"><img height=260px src="controls\title.png"></a>
+                <a href="controls\interval.png" class="fancybox" rel="controls"><img height=260px src="controls\interval.png"></a>
+                <a href="controls\link.png" class="fancybox" rel="controls"><img height=260px src="controls\link.png"></a>
+                <a href="controls\shape.png" class="fancybox" rel="controls"><img height=260px src="controls\shape.png"></a>
             </div>
             <p>
                 Then, I put together some wireframes of the entire timer.
             </p>
             <div class="gallery">
-                <img height=260px src="layouts\1.png">
-                <img height=260px src="layouts\3.png">
-                <img height=260px src="layouts\4.png">
+                <a href="layouts\1.png" class="fancybox" rel="layout"><img height=260px src="layouts\1.png"></a>
+                <a href="layouts\3.png" class="fancybox" rel="layout"><img height=260px src="layouts\3.png"></a>
+                <a href="layouts\4.png" class="fancybox" rel="layout"><img height=260px src="layouts\4.png"></a>
             </div>
             <p>
-                After evaluating these using the personas I created, I put together a rough interactive prototype to test with, changing it to respond to feedback.
+                After evaluating these using the points of view of the personas I created, I put together a rough interactive prototype to test with, changing it over time to respond to feedback.
             </p>
             <div style="width:80%; margin:auto;"> <div style="position:relative; width:100%; height:0px; padding-bottom:68.125%;">
                 <iframe src="https://marvelapp.com/1dd1bf4?emb=1" width="1280" height="872" allowTransparency="true" frameborder="0"></iframe>
@@ -351,7 +372,7 @@
         <div class="section" id="testing">
             <h2>User Testing</h2>
             <p>
-                I put together an outline for user testing, rounded up some friends (since it was a personal project), and started testing. The test outline starts off with some background questions, and progresses to trying out tasks on the interactive prototype.
+                Once I had an interactive prototype, I put together an outline for user testing, rounded up some friends (since it was a personal project), and started testing. The test outline starts off with some background questions, and progresses to trying out tasks on the interactive prototype.
             </p>
             <p>
                 I like to use web forms as outlines for user tests and interviews, so that I can type my notes while keeping my eyes and attention on the user.
@@ -364,19 +385,22 @@
         <div class="section" id="style">
             <h2>Visual Style</h2>
             <p>
+                Before I started working on high-fidelity mockups of the timer, I spent some time defining the timer's visual style.
+            </p>
+            <p>
                 I collected reference for the aesthetic I wanted for the timer in a moodboard.
             </p>
-            <img class="fullImage" src="https://docs.google.com/drawings/d/1AEoemCUylb29BtUF5poDFiX5fL_PMXADkaVuXvzeIQA/pub?w=1197&amp;h=774">
+            <a href="moodboard.png" class="fancybox" rel="style"><img class="fullImage" src="https://docs.google.com/drawings/d/1AEoemCUylb29BtUF5poDFiX5fL_PMXADkaVuXvzeIQA/pub?w=1197&amp;h=774"></a>
             <p>
-                Then, I put together a style guide. I wanted the timer to be customizeable, so I included five color palettes.
+                Then, I experimented with different visual elements and put together a style guide. I wanted the timer to be customizeable, so I included five color palettes.
             </p>
-            <img class="fullImage" src="style guide.png">
+            <a href="style guide.png" class="fancybox" rel="style"><img class="fullImage" src="style guide.png"></a>
         </div>
 
         <div class="section" id="hifi">
             <h2>High-Fidelity</h2>
             <p>
-                Synthesizing the style, layout, and tester feedback, I created a final high-fidelity prototype. (<a target="_blank" href="https://marvelapp.com/i5g70h">Open in new tab</a>)
+                Synthesizing the style, layout, and tester feedback, I created the final product - high-fidelity mockups of the timer and an interactive prototype. It's a pixel-perfect approximation of the real timer. (<a target="_blank" href="https://marvelapp.com/i5g70h">Open in new tab</a>)
             </p>
             <div style="width:80%; margin:auto;"> <div style="position:relative; width:100%; height:0px; padding-bottom:60%;">
                 <iframe src="https://marvelapp.com/i5g70h?emb=1" width="1200" height="800" allowTransparency="true" frameborder="0"></iframe>
@@ -410,8 +434,9 @@
         </div>
 
         <div class="section" id="conclusion">
+            <h2>Need some UI/UX for your own project?</h2>
             <p>
-                So there it is! That's my design process - if you'd like to hire me, I can do any or all of the above UI/UX design tasks for your company.
+                I hope you enjoyed reading about the design process of Nicetimer! If you'd like to hire me, I can do any or all of the above UI/UX design tasks for your company. Email me at <a href="mailto:meena@through-the-floor.com?Subject=UI/UX">meena@through-the-floor.com</a>, and see more of my work at <a  target="_blank" href="http://through-the-floor.com">through-the-floor.com</a>.
             </p>
         </div>
 
